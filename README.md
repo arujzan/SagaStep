@@ -24,6 +24,11 @@ This implementation demonstrates the Saga Pattern within a single microservice f
 
 If any step fails:
 - Previous successful steps are compensated in reverse order
+
+saga_pattern/
+├── saga_orchestrator.h
+├── saga_steps.h
+└── main.cpp
 - Compensation failures are logged but don't stop the process
 
 ## Usage
